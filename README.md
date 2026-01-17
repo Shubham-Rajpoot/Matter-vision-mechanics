@@ -1,6 +1,3 @@
-# TCS-Inspired Corporate Product Website
-
-A modern, enterprise-grade frontend website built with Next.js App Router and Tailwind CSS, inspired by Tata Consultancy Services (TCS).
 
 ## Features
 
