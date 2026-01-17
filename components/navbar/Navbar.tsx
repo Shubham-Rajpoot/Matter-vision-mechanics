@@ -7,34 +7,52 @@ import MobileMenu from "./MobileMenu";
 
 const navItems = [
   {
-    label: "What we do",
-    href: "#services",
+    label: "Research Areas",
+    href: "#research",
     dropdown: [
-      { label: "Industries", href: "#industries" },
-      { label: "Services", href: "#services" },
-      { label: "Products and Platforms", href: "#products" },
-      { label: "Research & Innovation", href: "#innovation" },
-      { label: "Alliances", href: "#alliances" },
+      { label: "Robotics", href: "/research/robotics" },
+      { label: "Artificial Intelligence", href: "/research/artificial-intelligence" },
+      { label: "Rural Engineering", href: "/research/rural-engineering" },
+      { label: "Sustainable Ceramics", href: "/research/sustainable-ceramics" },
+      { label: "Bio Remediation", href: "/research/bio-remediation" },
+      { label: "Agrotech", href: "/research/agrotech" },
+      { label: "Consumer Products", href: "/research/consumer-products" },
+      { label: "Healthcare Technology", href: "/research/healthcare-technology" },
+      { label: "Assistive Technology", href: "/research/assistive-technology" },
+      { label: "Industrial Design", href: "/research/industrial-design" },
     ],
   },
   {
-    label: "Who we are",
+    label: "Projects",
+    href: "#projects",
+    dropdown: [
+      { label: "AI for Sign Language", href: "#sign-language" },
+      { label: "Clean Air Solutions", href: "#clean-air" },
+      { label: "Sustainability Projects", href: "#sustainability" },
+      { label: "Animal Husbandry", href: "#animal-husbandry" },
+      { label: "Health Monitoring", href: "#health-monitoring" },
+      { label: "Gaming Solutions", href: "#gaming" },
+      { label: "Home Decor", href: "#home-decor" },
+    ],
+  },
+  {
+    label: "About",
     href: "#about",
     dropdown: [
-      { label: "About Us", href: "#about" },
-      { label: "Leadership", href: "#leadership" },
-      { label: "Culture", href: "#culture" },
-      { label: "Corporate Governance", href: "#governance" },
+      { label: "Our Mission", href: "#mission" },
+      { label: "Research Labs", href: "#labs" },
+      { label: "Team", href: "#team" },
+      { label: "Partnerships", href: "#partnerships" },
     ],
   },
   {
-    label: "Insights",
-    href: "#insights",
+    label: "Publications",
+    href: "#publications",
     dropdown: [
-      { label: "Blog", href: "#blog" },
+      { label: "Research Papers", href: "#papers" },
       { label: "Case Studies", href: "#cases" },
       { label: "White Papers", href: "#whitepapers" },
-      { label: "Webinars", href: "#webinars" },
+      { label: "Blog", href: "#blog" },
     ],
   },
   {
@@ -42,18 +60,13 @@ const navItems = [
     href: "#careers",
     dropdown: [
       { label: "Open Positions", href: "#positions" },
-      { label: "Life at Company", href: "#life" },
-      { label: "Benefits", href: "#benefits" },
+      { label: "Research Opportunities", href: "#research-opps" },
       { label: "Internships", href: "#internships" },
     ],
   },
   {
-    label: "Newsroom",
-    href: "#news",
-  },
-  {
-    label: "Investors",
-    href: "#investors",
+    label: "Contact",
+    href: "#contact",
   },
 ];
 
@@ -87,21 +100,24 @@ export default function Navbar() {
   return (
     <>
       <nav
-        className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
+        className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
           isScrolled
-            ? "bg-dark-900/95 backdrop-blur-md shadow-soft-lg"
-            : "bg-dark-900"
+            ? "bg-dark-900/98 backdrop-blur-xl shadow-modern-lg border-b border-white/5"
+            : "bg-dark-900/80 backdrop-blur-sm"
         }`}
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-16 lg:h-20">
             {/* Logo */}
-            <div className="flex items-center space-x-3">
-              <div className="text-white font-bold text-2xl lg:text-3xl">
-                tcs
+            <div className="flex items-center space-x-3 group cursor-pointer">
+              <div className="relative">
+                <div className="text-white font-black text-2xl lg:text-3xl tracking-tight group-hover:text-primary-400 transition-colors duration-300">
+                  MVM
+                </div>
+                <div className="absolute -bottom-1 left-0 right-0 h-0.5 bg-gradient-to-r from-primary-500 to-cyan-500 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></div>
               </div>
-              <div className="hidden lg:block text-white text-xs font-medium tracking-wider">
-                TATA CONSULTANCY SERVICES
+              <div className="hidden lg:block text-white/80 text-xs font-semibold tracking-widest uppercase">
+                MATTER VISION MECHANICS
               </div>
             </div>
 
@@ -116,10 +132,13 @@ export default function Navbar() {
                 >
                   <a
                     href={item.href}
-                    className={`flex items-center px-4 py-2 text-sm font-medium text-white hover:text-primary-400 transition-colors duration-200 ${
-                      activeDropdown === item.label ? "text-primary-400" : ""
+                    className={`relative flex items-center px-4 py-2 text-sm font-semibold text-white/90 hover:text-white transition-all duration-300 ${
+                      activeDropdown === item.label ? "text-white" : ""
                     }`}
                   >
+                    {activeDropdown === item.label && (
+                      <span className="absolute bottom-0 left-4 right-4 h-0.5 bg-gradient-to-r from-primary-400 to-cyan-400"></span>
+                    )}
                     {item.label}
                     {item.dropdown && (
                       <span className="ml-1">
@@ -159,7 +178,7 @@ export default function Navbar() {
                 Contact Us
               </a>
               <div className="hidden lg:block text-white font-bold text-xl">
-                TATA
+                MVM
               </div>
               {/* Mobile menu button */}
               <button

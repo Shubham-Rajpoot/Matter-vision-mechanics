@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { ChevronRight } from "lucide-react";
 
 interface DropdownItem {
@@ -18,10 +19,16 @@ export default function NavDropdown({ items, activeItem, onItemHover }: NavDropd
     <div className="absolute top-full left-0 mt-0 w-72 bg-white shadow-soft-lg py-2 animate-slide-down">
       {items.map((item, index) => {
         const isActive = activeItem === item.label;
+        const isRoute = item.href.startsWith("/");
+        const Component = isRoute ? Link : "a";
+        const props = isRoute 
+          ? { href: item.href }
+          : { href: item.href };
+        
         return (
-          <a
+          <Component
             key={index}
-            href={item.href}
+            {...props}
             onMouseEnter={() => onItemHover && onItemHover(item.label)}
             onMouseLeave={() => onItemHover && onItemHover(null)}
             className={`relative flex items-center justify-between px-8 py-3 text-sm transition-all duration-200 group ${
@@ -37,7 +44,7 @@ export default function NavDropdown({ items, activeItem, onItemHover }: NavDropd
               )}
             </span>
             <ChevronRight className="w-4 h-4 text-gray-400 group-hover:text-primary-600 transform group-hover:translate-x-1 transition-all" />
-          </a>
+          </Component>
         );
       })}
     </div>

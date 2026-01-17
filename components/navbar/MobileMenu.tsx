@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Link from "next/link";
 import { ChevronDown, ChevronUp } from "lucide-react";
 
 interface DropdownItem {
@@ -49,27 +50,45 @@ export default function MobileMenu({ isOpen, onClose, navItems }: MobileMenuProp
                 </button>
                 {openDropdown === item.label && (
                   <div className="pb-4 space-y-2">
-                    {item.dropdown.map((dropdownItem, index) => (
-                      <a
-                        key={index}
-                        href={dropdownItem.href}
-                        onClick={onClose}
-                        className="block py-2 pl-6 text-gray-300 hover:text-primary-400 transition-colors"
-                      >
-                        {dropdownItem.label}
-                      </a>
-                    ))}
+                    {item.dropdown.map((dropdownItem, index) => {
+                      const isRoute = dropdownItem.href.startsWith("/");
+                      const Component = isRoute ? Link : "a";
+                      const props = isRoute 
+                        ? { href: dropdownItem.href }
+                        : { href: dropdownItem.href };
+                      
+                      return (
+                        <Component
+                          key={index}
+                          {...props}
+                          onClick={onClose}
+                          className="block py-2 pl-6 text-gray-300 hover:text-primary-400 transition-colors"
+                        >
+                          {dropdownItem.label}
+                        </Component>
+                      );
+                    })}
                   </div>
                 )}
               </>
             ) : (
-              <a
-                href={item.href}
-                onClick={onClose}
-                className="block py-4 text-white hover:text-primary-400 transition-colors font-medium"
-              >
-                {item.label}
-              </a>
+              (() => {
+                const isRoute = item.href.startsWith("/");
+                const Component = isRoute ? Link : "a";
+                const props = isRoute 
+                  ? { href: item.href }
+                  : { href: item.href };
+                
+                return (
+                  <Component
+                    {...props}
+                    onClick={onClose}
+                    className="block py-4 text-white hover:text-primary-400 transition-colors font-medium"
+                  >
+                    {item.label}
+                  </Component>
+                );
+              })()
             )}
           </div>
         ))}

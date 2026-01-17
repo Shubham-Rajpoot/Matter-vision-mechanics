@@ -42,6 +42,9 @@ const config: Config = {
         "soft-lg": "0 10px 30px -5px rgba(0, 0, 0, 0.1), 0 20px 40px -10px rgba(0, 0, 0, 0.06)",
         "neumorphism": "8px 8px 16px #d1d9e6, -8px -8px 16px #ffffff",
         "neumorphism-inset": "inset 4px 4px 8px #d1d9e6, inset -4px -4px 8px #ffffff",
+        "modern": "0 4px 20px -2px rgba(0, 0, 0, 0.1), 0 8px 16px -4px rgba(0, 0, 0, 0.05)",
+        "modern-lg": "0 20px 50px -10px rgba(0, 0, 0, 0.15), 0 10px 30px -5px rgba(0, 0, 0, 0.1)",
+        "glow": "0 0 20px rgba(59, 130, 246, 0.3), 0 0 40px rgba(59, 130, 246, 0.1)",
       },
       animation: {
         "fade-in": "fadeIn 0.5s ease-in-out",
