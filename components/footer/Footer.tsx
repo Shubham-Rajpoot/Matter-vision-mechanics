@@ -12,33 +12,40 @@ import {
 } from "lucide-react";
 
 const footerLinks = {
-  "What we do": [
-    "Industries",
-    "Services",
-    "Products and Platforms",
-    "Research & Innovation",
-    "Alliances",
+  "Research Areas": [
+    "Robotics",
+    "Artificial Intelligence",
+    "Rural Engineering",
+    "Sustainable Ceramics",
+    "Bio Remediation",
+    "Agrotech",
+    "Consumer Products",
+    "Healthcare Technology",
+    "Assistive Technology",
+    "Industrial Design",
   ],
-  "Who we are": [
-    "About Us",
-    "Leadership",
-    "Culture",
-    "Corporate Governance",
-    "Sustainability",
+  "Projects": [
+    "AI Sign Language",
+    "Clean Air Solutions",
+    "Sustainability Projects",
+    "Animal Husbandry",
+    "Health Monitoring",
+    "Gaming Solutions",
+    "Home Decor",
+  ],
+  "About": [
+    "Our Mission",
+    "Research Labs",
+    "Team",
+    "Partnerships",
+    "Careers",
   ],
   Resources: [
-    "Insights",
+    "Research Papers",
     "Case Studies",
     "White Papers",
-    "Webinars",
     "Blog",
-  ],
-  Careers: [
-    "Open Positions",
-    "Life at Company",
-    "Benefits",
-    "Internships",
-    "Apply Now",
+    "Publications",
   ],
 };
 
@@ -58,21 +65,21 @@ export default function Footer() {
           {/* Company Info */}
           <div className="lg:col-span-2">
             <div className="mb-6">
-              <div className="text-3xl font-bold mb-2">tcs</div>
+              <div className="text-3xl font-bold mb-2">MVM</div>
               <div className="text-sm text-gray-400 mb-6">
-                TATA CONSULTANCY SERVICES
+                MATTER VISION MECHANICS
               </div>
             </div>
             <p className="text-gray-300 mb-6 leading-relaxed">
-              Transforming businesses through innovation and technology.
-              Building perpetually adaptive enterprises for a changing world.
+              Pioneering research company advancing humanity through cutting-edge innovation 
+              in Robotics, AI, Sustainable Technologies, and beyond. Where research meets impact.
             </p>
 
             {/* Contact Info */}
             <div className="space-y-3 mb-8">
               <div className="flex items-center text-gray-300 text-sm">
                 <Mail className="w-5 h-5 mr-3 text-primary-400" />
-                <span>contact@company.com</span>
+                <span>research@mattervisionmechanics.com</span>
               </div>
               <div className="flex items-center text-gray-300 text-sm">
                 <Phone className="w-5 h-5 mr-3 text-primary-400" />
@@ -80,7 +87,7 @@ export default function Footer() {
               </div>
               <div className="flex items-start text-gray-300 text-sm">
                 <MapPin className="w-5 h-5 mr-3 mt-0.5 text-primary-400 flex-shrink-0" />
-                <span>123 Business Street, Suite 100, City, State 12345</span>
+                <span>Research Campus, Innovation District, City, State 12345</span>
               </div>
             </div>
 
@@ -128,7 +135,10 @@ export default function Footer() {
         {/* Newsletter Section */}
         <div className="mt-12 pt-8 border-t border-gray-700">
           <div className="max-w-md">
-            <h3 className="text-lg font-semibold mb-4">Subscribe to Newsletter</h3>
+            <h3 className="text-lg font-semibold mb-4">Subscribe to Research Updates</h3>
+            <p className="text-gray-400 text-sm mb-4">
+              Stay informed about our latest research breakthroughs, publications, and innovations.
+            </p>
             <form className="flex gap-3">
               <input
                 type="email"
@@ -151,7 +161,7 @@ export default function Footer() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
             <div className="text-gray-400 text-sm">
-              © {new Date().getFullYear()} Company Name. All rights reserved.
+              © {new Date().getFullYear()} MATTER VISION MECHANICS. All rights reserved.
             </div>
             <div className="flex flex-wrap justify-center gap-6 text-sm">
               <a

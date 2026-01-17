@@ -1,35 +1,49 @@
 "use client";
 
-import { Lightbulb, Microscope, Rocket, Award } from "lucide-react";
+import { Lightbulb, Microscope, Rocket, Award, Beaker, Users, BookOpen, ArrowRight } from "lucide-react";
 
-const innovations = [
+const researchFacilities = [
   {
-    icon: Lightbulb,
-    title: "Research Labs",
-    description: "Cutting-edge research facilities driving technological breakthroughs.",
-    stat: "500+",
+    icon: Microscope,
+    title: "Research Laboratories",
+    description: "State-of-the-art research facilities equipped with advanced instrumentation for robotics, AI, materials science, and biotechnology research.",
+    stat: "10+",
+    statLabel: "Active Labs",
+  },
+  {
+    icon: Beaker,
+    title: "Innovation Centers",
+    description: "Collaborative spaces where interdisciplinary teams transform research insights into practical solutions and commercial products.",
+    stat: "50+",
     statLabel: "Research Projects",
   },
   {
-    icon: Microscope,
-    title: "Innovation Centers",
-    description: "Collaborative spaces where ideas transform into transformative solutions.",
-    stat: "50+",
-    statLabel: "Global Centers",
-  },
-  {
     icon: Rocket,
-    title: "Startup Ecosystem",
-    description: "Fostering innovation through strategic partnerships and investments.",
-    stat: "200+",
-    statLabel: "Partners",
+    title: "Technology Transfer",
+    description: "Bridging the gap between research and industry through strategic partnerships, licensing, and startup incubation programs.",
+    stat: "20+",
+    statLabel: "Industry Partners",
   },
   {
     icon: Award,
-    title: "Industry Recognition",
-    description: "Acknowledged leaders in innovation and technological excellence.",
+    title: "Research Excellence",
+    description: "Recognized for groundbreaking contributions across multiple research domains with publications, patents, and industry recognition.",
     stat: "100+",
-    statLabel: "Awards",
+    statLabel: "Publications & Patents",
+  },
+  {
+    icon: Users,
+    title: "Research Team",
+    description: "Diverse team of researchers, engineers, and scientists working collaboratively across disciplines to solve complex challenges.",
+    stat: "150+",
+    statLabel: "Researchers",
+  },
+  {
+    icon: BookOpen,
+    title: "Academic Partnerships",
+    description: "Collaborative research programs with leading universities and research institutions worldwide, fostering knowledge exchange.",
+    stat: "15+",
+    statLabel: "University Partners",
   },
 ];
 
@@ -46,20 +60,26 @@ export default function InnovationSection() {
       </div>
 
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        {/* Section Header */}
-        <div className="text-center mb-16">
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-4">
-            Research & Innovation
+        {/* Modern Section Header */}
+        <div className="text-center mb-20">
+          <div className="inline-flex items-center justify-center gap-3 mb-6">
+            <div className="h-px w-12 bg-gradient-to-r from-transparent to-primary-400"></div>
+            <Lightbulb className="w-6 h-6 text-primary-400" />
+            <div className="h-px w-12 bg-gradient-to-l from-transparent to-primary-400"></div>
+          </div>
+          <h2 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold mb-6 tracking-tight">
+            Research Infrastructure
           </h2>
-          <p className="text-lg text-gray-300 max-w-2xl mx-auto">
-            Pioneering the future of technology through continuous innovation and research
+          <p className="text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed font-light">
+            World-class research facilities and collaborative ecosystem driving innovation
+            and technological advancement
           </p>
         </div>
 
-        {/* Innovations Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8">
-          {innovations.map((innovation, index) => {
-            const Icon = innovation.icon;
+        {/* Facilities Grid */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
+          {researchFacilities.map((facility, index) => {
+            const Icon = facility.icon;
             return (
               <div
                 key={index}
@@ -72,19 +92,19 @@ export default function InnovationSection() {
 
                 {/* Content */}
                 <h3 className="text-xl font-bold mb-3 group-hover:text-primary-400 transition-colors">
-                  {innovation.title}
+                  {facility.title}
                 </h3>
                 <p className="text-gray-300 mb-6 leading-relaxed text-sm">
-                  {innovation.description}
+                  {facility.description}
                 </p>
 
                 {/* Stat */}
                 <div className="pt-6 border-t border-white/10">
                   <div className="text-3xl font-bold text-primary-400 mb-1">
-                    {innovation.stat}
+                    {facility.stat}
                   </div>
                   <div className="text-sm text-gray-400">
-                    {innovation.statLabel}
+                    {facility.statLabel}
                   </div>
                 </div>
               </div>
@@ -92,13 +112,17 @@ export default function InnovationSection() {
           })}
         </div>
 
-        {/* CTA Section */}
-        <div className="mt-16 text-center">
+        {/* Modern CTA Section */}
+        <div className="mt-20 text-center">
           <a
             href="#contact"
-            className="inline-flex items-center px-8 py-4 bg-primary-600 hover:bg-primary-700 text-white font-semibold rounded-2xl shadow-soft-lg hover:shadow-soft transition-all duration-300 transform hover:scale-105"
+            className="group relative inline-flex items-center justify-center px-10 py-4.5 bg-gradient-to-r from-primary-600 to-primary-700 hover:from-primary-500 hover:to-primary-600 text-white font-semibold rounded-2xl shadow-2xl hover:shadow-primary-500/50 transition-all duration-300 transform hover:scale-[1.02] hover:-translate-y-0.5 overflow-hidden"
           >
-            Explore Innovation
+            <span className="absolute inset-0 bg-gradient-to-r from-white/0 via-white/20 to-white/0 translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-1000"></span>
+            <span className="relative flex items-center gap-2.5">
+              Explore Our Research
+              <ArrowRight className="w-5 h-5 transform group-hover:translate-x-1 transition-transform" />
+            </span>
           </a>
         </div>
       </div>

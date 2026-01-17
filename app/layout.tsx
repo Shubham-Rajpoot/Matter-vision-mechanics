@@ -5,8 +5,8 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
 
 export const metadata: Metadata = {
-  title: "Corporate Solutions | Enterprise Technology Services",
-  description: "Leading enterprise technology solutions and consulting services",
+  title: "MATTER VISION MECHANICS | Advanced Research & Innovation",
+  description: "Pioneering research company specializing in Robotics, AI, Rural Engineering, Sustainable Ceramics, Bio Remediation, Agrotech, Consumer Products, Healthcare Technology, Assistive Tech, and Industrial Design",
 };
 
 export default function RootLayout({

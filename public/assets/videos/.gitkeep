@@ -1,0 +1,20 @@
+# Videos Folder
+
+Place your video files here. Supported formats: MP4, WebM, MOV
+
+## Recommended Video Specifications:
+- Format: MP4 (H.264 codec)
+- Resolution: 1920x1080 (Full HD) or higher
+- Aspect Ratio: 16:9
+- File Size: Optimize for web (consider compression)
+- Duration: 10-30 seconds for hero videos (looping)
+
+## Usage:
+- Hero video: `/assets/videos/hero-video.mp4`
+- Research page videos: `/assets/videos/research-[name].mp4`
+
+## Example files you can add:
+- `hero-video.mp4` - Main homepage hero video
+- `robotics-video.mp4` - Robotics research page video
+- `ai-video.mp4` - AI research page video
+- etc.

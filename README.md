@@ -1,6 +1,31 @@
-# TCS-Inspired Corporate Product Website
+# MATTER VISION MECHANICS - Research Company Website
 
-A modern, enterprise-grade frontend website built with Next.js App Router and Tailwind CSS, inspired by Tata Consultancy Services (TCS).
+A modern, enterprise-grade research company website built with Next.js App Router and Tailwind CSS, showcasing active research across ten cutting-edge domains.
+
+## About MATTER VISION MECHANICS
+
+MATTER VISION MECHANICS is a pioneering research company advancing humanity through cutting-edge innovation. We conduct active research across ten key domains:
+
+1. **Robotics** - Advanced robotics research for industrial automation and autonomous systems
+2. **Artificial Intelligence** - AI research including machine learning, computer vision, and assistive AI
+3. **Rural Engineering** - Engineering solutions tailored for rural communities
+4. **Sustainable Ceramics** - Innovative ceramic materials and sustainable manufacturing
+5. **Bio Remediation Technology** - Environmental biotechnology for ecological restoration
+6. **Agrotech** - Agricultural technology innovations and sustainable farming
+7. **Consumer Products** - Research and development of innovative consumer solutions
+8. **Healthcare Technology** - IoT-based health monitoring and medical device innovation
+9. **Assistive Technology** - Specialized assistive technologies including AI-powered sign language recognition
+10. **Industrial Design** - Product design, ergonomics, and manufacturing processes
+
+## Key Research Projects
+
+- **AI Sign Language Recognition** - Real-time sign language recognition and translation system
+- **Clean Air Solutions** - Portable air purifiers and advanced mask technology
+- **Sustainable Agriculture Systems** - Ceramic micro furnaces and hydroponic setups
+- **IoT Health Monitoring Device** - Two-in-one health monitoring solution
+- **Bovidae Health & Tracking System** - Livestock monitoring through advanced tracking
+- **Educational Gaming Platform** - Online, offline, and Montessori-inspired games
+- **Artisan Home Decor** - Premium wood and acrylic art pieces
 
 ## Features
 
@@ -66,10 +91,10 @@ npm start
 │   ├── hero/
 │   │   └── Hero.tsx        # Full-screen hero with video background
 │   ├── sections/
-│   │   ├── ServicesSection.tsx    # Services showcase
-│   │   ├── IndustriesSection.tsx  # Industries served
-│   │   ├── ProductsSection.tsx    # Products and platforms
-│   │   └── InnovationSection.tsx  # Research & innovation
+│   │   ├── ServicesSection.tsx    # Research Areas showcase (10 domains)
+│   │   ├── IndustriesSection.tsx  # Research Applications & Impact
+│   │   ├── ProductsSection.tsx    # Research Projects & Products
+│   │   └── InnovationSection.tsx  # Research Infrastructure
 │   └── footer/
 │       └── Footer.tsx      # Enterprise footer
 ├── tailwind.config.ts      # Tailwind configuration with custom theme
@@ -99,13 +124,22 @@ npm start
 - **Transitions**: Smooth hover effects
 - **Animations**: Fade-in, slide-up, slide-down
 
+## Research Areas
+
+The website showcases our ten active research domains, each with dedicated sections highlighting:
+- Research focus and objectives
+- Key projects and innovations
+- Industry applications
+- Impact and outcomes
+
 ## Customization
 
-All components use mock/static data and can be easily customized:
+All components use structured data and can be easily customized:
 - Replace video source in `Hero.tsx`
 - Update navigation items in `Navbar.tsx`
 - Modify section content in respective section components
 - Adjust colors in `tailwind.config.ts`
+- Update research areas and projects in section components
 
 ## Notes
 
@@ -113,6 +147,7 @@ All components use mock/static data and can be easily customized:
 - Video source uses a placeholder URL; replace with your own video
 - All links and forms are placeholders for now
 - Fully production-ready frontend code with TypeScript
+- Designed for industrial/research company presentation
 
 ## License
 
