@@ -1,15 +1,7 @@
-"use client";
 
-import { useState } from "react";
-import { Play, Pause, ArrowRight, Sparkles, Zap } from "lucide-react";
+import { ArrowRight, Sparkles, Zap } from "lucide-react";
 
 export default function Hero() {
-  const [isVideoPlaying, setIsVideoPlaying] = useState(true);
-
-  const toggleVideo = () => {
-    setIsVideoPlaying(!isVideoPlaying);
-  };
-
   return (
    <section className="relative min-h-screen w-full overflow-hidden pt-24 pb-24">
 
@@ -20,9 +12,7 @@ export default function Hero() {
           muted
           loop
           playsInline
-          className={`w-full h-full object-cover transition-opacity duration-700 ${
-            isVideoPlaying ? "opacity-100" : "opacity-40"
-          }`}
+          className={`w-full h-full object-cover transition-opacity duration-700`}
         >
           <source
             src="/assets/videos/istockphoto-2183778539-640_adpp_is.mp4"
@@ -118,19 +108,19 @@ export default function Hero() {
           {/* Modern Stats Grid */}
           <div className="grid grid-cols-3 gap-12 max-w-3xl mx-auto pt-12 border-t border-white/10">
             <div className="text-center group">
-              <div className="text-5xl sm:text-6xl font-black text-transparent bg-gradient-to-b from-white to-white/70 bg-clip-text mb-2 group-hover:scale-110 transition-transform duration-300">
+              <div className="text-5xl max-[500px]:text-4xl max-[400px]:text-3xl sm:text-6xl font-black text-transparent bg-gradient-to-b from-white to-white/70 bg-clip-text mb-2 group-hover:scale-110 transition-transform duration-300">
                 10+
               </div>
               <div className="text-sm font-medium text-white/60 uppercase tracking-wider">Research Domains</div>
             </div>
             <div className="text-center group">
-              <div className="text-5xl sm:text-6xl font-black text-transparent bg-gradient-to-b from-white to-white/70 bg-clip-text mb-2 group-hover:scale-110 transition-transform duration-300">
+              <div className="text-5xl max-[500px]:text-4xl sm:text-6xl max-[400px]:text-3xl  font-black text-transparent bg-gradient-to-b from-white to-white/70 bg-clip-text mb-2 group-hover:scale-110 transition-transform duration-300">
                 50+
               </div>
               <div className="text-sm font-medium text-white/60 uppercase tracking-wider">Active Projects</div>
             </div>
             <div className="text-center group">
-              <div className="text-5xl sm:text-6xl font-black text-transparent bg-gradient-to-b from-white to-white/70 bg-clip-text mb-2 group-hover:scale-110 transition-transform duration-300">
+              <div className="text-5xl max-[500px]:text-4xl sm:text-6xl max-[400px]:text-3xl  font-black text-transparent bg-gradient-to-b from-white to-white/70 bg-clip-text mb-2 group-hover:scale-110 transition-transform duration-300">
                 150+
               </div>
               <div className="text-sm font-medium text-white/60 uppercase tracking-wider">Researchers</div>
@@ -139,20 +129,6 @@ export default function Hero() {
         </div>
       </div>
 
-      {/* Modern Video Control */}
-      <button
-        onClick={toggleVideo}
-        className="absolute bottom-10 left-10 z-20 p-3.5 bg-white/10 hover:bg-white/15 backdrop-blur-xl rounded-2xl text-white transition-all duration-300 hover:scale-110 border border-white/20 hover:border-white/30 shadow-xl"
-        aria-label={isVideoPlaying ? "Pause video" : "Play video"}
-      >
-        {isVideoPlaying ? (
-          <Pause className="w-5 h-5" />
-        ) : (
-          <Play className="w-5 h-5" />
-        )}
-      </button>
-
-      {/* Modern Scroll Indicator */}
       <div className="absolute bottom-10 right-10 z-20 hidden lg:flex flex-col items-center gap-3 text-white/60 group cursor-pointer">
         <span className="text-xs font-medium uppercase tracking-wider group-hover:text-white/80 transition-colors">Scroll</span>
         <div className="w-6 h-12 border-2 border-white/30 rounded-full flex justify-center p-1.5 group-hover:border-white/50 transition-colors">

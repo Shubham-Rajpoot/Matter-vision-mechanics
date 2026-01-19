@@ -1,4 +1,3 @@
-"use client";
 
 import Link from "next/link";
 import { 
@@ -21,14 +20,14 @@ const researchAreas = [
     icon: Cpu,
     title: "Robotics",
     slug: "robotics",
-    description: "Advanced robotics research for industrial automation, service robotics, and autonomous systems. Developing next-generation robotic solutions for diverse applications.",
+    description: "Fundamental Research in diverse fields like programmable prosthetics, autonomous/semi-autonomous assistants in various industries, industrial automation and more.",
     gradient: "from-blue-500 to-cyan-500",
   },
   {
     icon: Network,
     title: "Artificial Intelligence",
     slug: "artificial-intelligence",
-    description: "Cutting-edge AI research including machine learning, deep learning, computer vision, and natural language processing. Special focus on assistive AI for sign language recognition and HCI.",
+    description: "Bleeding Edge AI research in machine learning, deep learning, image processing, computer vision, satellite image processing and biometrics. Special focus upon assistive AI for sign language recognition and HCI.",
     gradient: "from-purple-500 to-indigo-500",
   },
   {
@@ -115,7 +114,7 @@ export default function ServicesSection() {
             Research Areas
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed font-light">
-            Active research across ten cutting-edge domains, driving innovation and creating impact
+            Active research across cutting-edge domains, driving innovation and creating impact
             through interdisciplinary collaboration
           </p>
         </div>
@@ -127,12 +126,12 @@ export default function ServicesSection() {
             return (
               <Link
                 key={index}
-                href={`/research/${area.slug}`}
+                href={`/${area.slug}`}
                 className="group relative bg-white rounded-2xl p-8 shadow-[0_1px_3px_0_rgba(0,0,0,0.1),0_1px_2px_-1px_rgba(0,0,0,0.1)] hover:shadow-[0_10px_30px_-5px_rgba(0,0,0,0.1),0_20px_40px_-10px_rgba(0,0,0,0.06)] transition-all duration-500 transform hover:-translate-y-1 border border-gray-200/50 hover:border-gray-300 block cursor-pointer overflow-hidden"
               >
                 {/* Subtle gradient background on hover */}
                 <div
-                  className={`absolute inset-0 bg-gradient-to-br ${area.gradient} opacity-0 group-hover:opacity-[0.02] transition-opacity duration-700 rounded-2xl`}
+                  className={`absolute inset-0 bg-gradient-to-br ${area.gradient} opacity-0 group-hover:opacity-[0.08] transition-opacity duration-700 rounded-2xl`}
                 />
                 
                 {/* Top accent line - more subtle */}
@@ -165,7 +164,7 @@ export default function ServicesSection() {
                 </div>
 
                 {/* Subtle corner accent */}
-                <div className={`absolute bottom-0 right-0 w-24 h-24 bg-gradient-to-br ${area.gradient} opacity-0 group-hover:opacity-[0.03] rounded-tl-full transition-opacity duration-700`} />
+                <div className={`absolute bottom-0 right-0 w-24 h-24 bg-gradient-to-br ${area.gradient} opacity-0 group-hover:opacity-[0.15] rounded-tl-full transition-opacity duration-700`} />
               </Link>
             );
           })}

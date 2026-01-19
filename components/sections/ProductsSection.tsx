@@ -1,10 +1,10 @@
-"use client";
 
-import { ArrowRight, Languages, Wind, Leaf, HeartPulse, Gamepad2, Palette, Cpu, Sparkles, CheckCircle2 } from "lucide-react";
+import { Languages, Wind, Leaf, HeartPulse, Gamepad2, Palette, Cpu, Sparkles, CheckCircle2, CheckCircle, CheckCircle2Icon, CheckCircleIcon } from "lucide-react";
 
 const projects = [
   {
     icon: Languages,
+    id:'sign-language',
     title: "AI Sign Language Recognition",
     description: "Advanced AI system for real-time sign language recognition and translation, enabling seamless communication for the deaf and hard of hearing community. Features HCI integration for intuitive interaction.",
     features: ["Real-time recognition", "Multi-language support", "HCI integration", "Mobile & web platforms"],
@@ -14,6 +14,7 @@ const projects = [
   },
   {
     icon: Wind,
+    id:'clean-air',
     title: "Clean Air Solutions",
     description: "Portable air purifiers and advanced mask technology for personal and industrial air quality management. Research-backed filtration systems for optimal health protection.",
     features: ["Portable purifiers", "Advanced filtration", "Smart monitoring", "Industrial solutions"],
@@ -23,6 +24,7 @@ const projects = [
   },
   {
     icon: Leaf,
+    id:'agriculture-systems',
     title: "Sustainable Agriculture Systems",
     description: "Ceramic micro furnaces for controlled environments and advanced hydroponic setups for sustainable food production. Integrated systems for year-round cultivation.",
     features: ["Ceramic micro furnaces", "Hydroponic systems", "Climate control", "IoT monitoring"],
@@ -32,6 +34,7 @@ const projects = [
   },
   {
     icon: HeartPulse,
+    id:'health-monitoring',
     title: "IoT Health Monitoring Device",
     description: "Two-in-one IoT-based health monitoring device combining vital signs tracking and remote patient monitoring. Enables continuous health assessment and telemedicine integration.",
     features: ["Vital signs monitoring", "Remote tracking", "Telemedicine ready", "Mobile app integration"],
@@ -41,6 +44,7 @@ const projects = [
   },
   {
     icon: Cpu,
+    id:'bovidae-health',
     title: "Bovidae Health & Tracking System",
     description: "Comprehensive health monitoring and tracking solution for cattle through advanced muzzle-based identification and biometric tracking. Real-time health analytics for livestock management.",
     features: ["Muzzle-based tracking", "Health monitoring", "Real-time analytics", "Mobile alerts"],
@@ -50,6 +54,7 @@ const projects = [
   },
   {
     icon: Gamepad2,
+    id:'educational-gaming',
     title: "Educational Gaming Platform",
     description: "Comprehensive gaming solutions including online, offline, and Montessori-inspired educational games. Designed to enhance learning through interactive play and cognitive development.",
     features: ["Online & offline modes", "Montessori games", "Educational content", "Multi-platform"],
@@ -59,6 +64,7 @@ const projects = [
   },
   {
     icon: Palette,
+    id:'home-decor',
     title: "Artisan Home Decor",
     description: "Premium wood and acrylic art pieces combining traditional craftsmanship with modern design. Customizable home decor solutions for residential and commercial spaces.",
     features: ["Wood & acrylic arts", "Custom designs", "Sustainable materials", "Commercial solutions"],
@@ -106,6 +112,7 @@ export default function ProductsSection() {
             return (
               <div
                 key={index}
+                id={project.id}
                 className="group relative bg-white rounded-3xl p-8 lg:p-10 shadow-modern hover:shadow-modern-lg transition-all duration-500 transform hover:-translate-y-2 border border-gray-100 hover:border-gray-200 overflow-hidden"
               >
                 {/* Gradient Accent Bar */}
@@ -131,7 +138,7 @@ export default function ProductsSection() {
                   </div>
 
                   {/* Icon & Title */}
-                  <div className="flex items-start gap-6 mb-6">
+                  <div className="flex items-start gap-6 mb-6 max-sm:flex-col">
                     <div className={`relative flex-shrink-0 p-5 rounded-2xl bg-gradient-to-br ${project.gradient} shadow-soft-lg transform group-hover:scale-110 group-hover:rotate-3 transition-all duration-500`}>
                       <Icon className="w-10 h-10 text-white relative z-10" />
                       <div className="absolute inset-0 bg-white/20 rounded-2xl blur-xl group-hover:blur-2xl transition-all duration-500" />
@@ -150,20 +157,20 @@ export default function ProductsSection() {
                   <ul className="space-y-3 mb-8">
                     {project.features.map((feature, featureIndex) => (
                       <li key={featureIndex} className="flex items-center text-gray-700 group-hover:text-gray-900 transition-colors">
-                        <CheckCircle2 className={`w-5 h-5 mr-3 text-transparent bg-gradient-to-r ${project.gradient} bg-clip-text flex-shrink-0`} />
+                        <CheckCircle2 className={`w-5 h-5 mr-3 text-white rounded-full bg-gradient-to-r ${project.gradient} flex-shrink-0`} />
                         <span className="text-sm">{feature}</span>
                       </li>
                     ))}
                   </ul>
 
                   {/* Modern CTA */}
-                  <div className="inline-flex items-center text-primary-600 font-semibold group-hover:gap-3 transition-all duration-300">
+                  {/* <div className="inline-flex items-center text-primary-600 font-semibold group-hover:gap-3 transition-all duration-300">
                     <span className="relative">
                       Learn more about this project
                       <span className="absolute bottom-0 left-0 right-0 h-[2px] bg-gradient-to-r from-primary-600 to-transparent transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left" />
                     </span>
                     <ArrowRight className="w-5 h-5 ml-2 transform group-hover:translate-x-2 transition-transform duration-300" />
-                  </div>
+                  </div> */}
                 </div>
 
                 {/* Hover Glow Effect */}

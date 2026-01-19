@@ -1,5 +1,3 @@
-"use client";
-
 import { Building2, Heart, Factory, Leaf, Users, GraduationCap, ShoppingCart, Sprout, Sparkles, TrendingUp } from "lucide-react";
 
 const applications = [

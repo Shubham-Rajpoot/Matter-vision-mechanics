@@ -5,6 +5,12 @@ import IndustriesSection from "@/components/sections/IndustriesSection";
 import ProductsSection from "@/components/sections/ProductsSection";
 import InnovationSection from "@/components/sections/InnovationSection";
 import Footer from "@/components/footer/Footer";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Matter Vision Mechanics",
+  description: "Discover innovative research across multiple engineering and technology domains.",
+};
 
 export default function Home() {
   return (

@@ -1,4 +1,3 @@
-"use client";
 
 import { Lightbulb, Microscope, Rocket, Award, Beaker, Users, BookOpen, ArrowRight } from "lucide-react";
 
@@ -115,11 +114,11 @@ export default function InnovationSection() {
         {/* Modern CTA Section */}
         <div className="mt-20 text-center">
           <a
-            href="#contact"
+            href="#research"
             className="group relative inline-flex items-center justify-center px-10 py-4.5 bg-gradient-to-r from-primary-600 to-primary-700 hover:from-primary-500 hover:to-primary-600 text-white font-semibold rounded-2xl shadow-2xl hover:shadow-primary-500/50 transition-all duration-300 transform hover:scale-[1.02] hover:-translate-y-0.5 overflow-hidden"
           >
             <span className="absolute inset-0 bg-gradient-to-r from-white/0 via-white/20 to-white/0 translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-1000"></span>
-            <span className="relative flex items-center gap-2.5">
+            <span className="relative flex p-2 items-center gap-2.5">
               Explore Our Research
               <ArrowRight className="w-5 h-5 transform group-hover:translate-x-1 transition-transform" />
             </span>

@@ -1,7 +1,3 @@
-"use client";
-
-import { useState } from "react";
-import { Play, Pause } from "lucide-react";
 
 interface PageHeroProps {
   title: string;
@@ -18,12 +14,6 @@ export default function PageHero({
   videoUrl,
   gradient = "from-primary-600 via-primary-700 to-primary-800"
 }: PageHeroProps) {
-  const [isVideoPlaying, setIsVideoPlaying] = useState(true);
-
-  const toggleVideo = () => {
-    setIsVideoPlaying(!isVideoPlaying);
-  };
-
   return (
     <section className="relative h-[60vh] min-h-[500px] w-full overflow-hidden">
       {/* Background - Video or Image */}
@@ -35,26 +25,14 @@ export default function PageHero({
               muted
               loop
               playsInline
-              className={`w-full h-full object-cover transition-opacity duration-500 ${
-                isVideoPlaying ? "opacity-100" : "opacity-50"
-              }`}
+              className={`w-full h-full object-cover transition-opacity duration-500 `}
             >
               <source src={videoUrl} type="video/mp4" />
               {/* Fallback gradient */}
               <div className={`absolute inset-0 bg-gradient-to-br ${gradient}`} />
             </video>
             {/* Video Control */}
-            <button
-              onClick={toggleVideo}
-              className="absolute bottom-8 left-8 z-20 p-3 bg-white/20 hover:bg-white/30 backdrop-blur-sm rounded-xl text-white transition-all duration-200 hover:scale-110"
-              aria-label={isVideoPlaying ? "Pause video" : "Play video"}
-            >
-              {isVideoPlaying ? (
-                <Pause className="w-6 h-6" />
-              ) : (
-                <Play className="w-6 h-6" />
-              )}
-            </button>
+            
           </>
         ) : imageUrl ? (
           <img

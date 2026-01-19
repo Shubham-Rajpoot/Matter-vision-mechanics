@@ -31,7 +31,7 @@ export default function MobileMenu({ isOpen, onClose, navItems }: MobileMenuProp
   if (!isOpen) return null;
 
   return (
-    <div className="fixed inset-0 top-16 lg:hidden z-40 bg-dark-900/98 backdrop-blur-md overflow-y-auto">
+    <div className="fixed inset-0 top-16 lg:hidden z-40 bg-dark-900/90 backdrop-blur-md overflow-y-auto">
       <div className="max-w-7xl mx-auto px-4 py-6">
         {navItems.map((item) => (
           <div key={item.label} className="border-b border-gray-700">
@@ -92,7 +92,7 @@ export default function MobileMenu({ isOpen, onClose, navItems }: MobileMenuProp
             )}
           </div>
         ))}
-        <div className="mt-6 space-y-4">
+        {/* <div className="mt-6 space-y-4">
           <a
             href="#contact"
             onClick={onClose}
@@ -100,7 +100,7 @@ export default function MobileMenu({ isOpen, onClose, navItems }: MobileMenuProp
           >
             Contact Us
           </a>
-        </div>
+        </div> */}
       </div>
     </div>
   );

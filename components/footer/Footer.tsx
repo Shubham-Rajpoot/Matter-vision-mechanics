@@ -1,4 +1,3 @@
-"use client";
 
 import {
   Linkedin,
@@ -10,42 +9,80 @@ import {
   MapPin,
   ArrowRight,
 } from "lucide-react";
+import Link from "next/link";
 
 const footerLinks = {
   "Research Areas": [
-    "Robotics",
-    "Artificial Intelligence",
-    "Rural Engineering",
-    "Sustainable Ceramics",
-    "Bio Remediation",
-    "Agrotech",
-    "Consumer Products",
-    "Healthcare Technology",
-    "Assistive Technology",
-    "Industrial Design",
+    {
+      title: "Robotics",
+      href: "/robotics"
+    },
+    {
+      title: "Artificial Intelligence",
+      href: "/artificial-intelligence"
+    },
+    {
+      title: "Rural Engineering",
+      href: "/rural-engineering"
+    },
+    {
+      title: "Sustainable Ceramics",
+      href: "/sustainable-ceramics"
+    },
+    {
+      title: "Bio Remediation",
+      href: "/bio-remediation"
+    },
+    {
+      title: "Agrotech",
+      href: "/agrotech"
+    },
+    {
+      title: "Consumer Products",
+      href: "/consumer-products"
+    },
+    {
+      title: "Healthcare Technology",
+      href: "/healthcare-technology"
+    },
+    {
+      title: "Assistive Technology",
+      href: "/assistive-technology"
+    },
+    {
+      title: "Industrial Design",
+      href: "/industrial-design"
+    },
   ],
   "Projects": [
-    "AI Sign Language",
-    "Clean Air Solutions",
-    "Sustainability Projects",
-    "Animal Husbandry",
-    "Health Monitoring",
-    "Gaming Solutions",
-    "Home Decor",
-  ],
-  "About": [
-    "Our Mission",
-    "Research Labs",
-    "Team",
-    "Partnerships",
-    "Careers",
-  ],
-  Resources: [
-    "Research Papers",
-    "Case Studies",
-    "White Papers",
-    "Blog",
-    "Publications",
+    {
+      title:"AI Sign Language",
+      href:'/#sign-language'
+    },
+    {
+      title:"Clean Air Solutions",
+      href:'/#clean-air'
+    },
+    {
+      title:"Sustainability Projects",
+      href:'/#agriculture-systems'
+    },
+    {
+      title:"Animal Husbandry",
+      href:'/#bovidae-health'
+    },
+    {
+      title:"Health Monitoring",
+      href:'/#health-monitoring'
+    },
+    {
+      title: "Gaming Solutions",
+      href:'/#educational-gaming'
+    },
+    {
+      title: "Home Decor",
+      href:'/#home-decor'
+    },
   ],
 };
 
@@ -64,12 +101,20 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 lg:gap-12">
           {/* Company Info */}
           <div className="lg:col-span-2">
-            <div className="mb-6">
-              <div className="text-3xl font-bold mb-2">MVM</div>
-              <div className="text-sm text-gray-400 mb-6">
+            <Link
+              href={"/"}
+              className="flex items-center space-x-3 group cursor-pointer mb-6"
+            >
+              <div className="relative">
+                <div className="text-white font-black text-2xl lg:text-3xl tracking-tight group-hover:text-primary-400 transition-colors duration-300">
+                  MVM
+                </div>
+                <div className="absolute -bottom-1 left-0 right-0 h-0.5 bg-gradient-to-r from-primary-500 to-cyan-500 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></div>
+              </div>
+              <div className="hidden sm:block text-white/80 text-xs font-semibold tracking-widest uppercase">
                 MATTER VISION MECHANICS
               </div>
-            </div>
+            </Link>
             <p className="text-gray-300 mb-6 leading-relaxed">
               Pioneering research company advancing humanity through cutting-edge innovation 
               in Robotics, AI, Sustainable Technologies, and beyond. Where research meets impact.
@@ -79,7 +124,7 @@ export default function Footer() {
             <div className="space-y-3 mb-8">
               <div className="flex items-center text-gray-300 text-sm">
                 <Mail className="w-5 h-5 mr-3 text-primary-400" />
-                <span>research@mattervisionmechanics.com</span>
+                <span className="max-[350px]:text-xs">research@mattervisionmechanics.com</span>
               </div>
               <div className="flex items-center text-gray-300 text-sm">
                 <Phone className="w-5 h-5 mr-3 text-primary-400" />
@@ -119,40 +164,17 @@ export default function Footer() {
                 {links.map((link, index) => (
                   <li key={index}>
                     <a
-                      href="#"
+                      href={link.href}
                       className="text-gray-400 hover:text-primary-400 transition-colors text-sm flex items-center group"
                     >
                       <ArrowRight className="w-3 h-3 mr-2 opacity-0 group-hover:opacity-100 transform group-hover:translate-x-0 -translate-x-2 transition-all" />
-                      {link}
+                      {link.title}
                     </a>
                   </li>
                 ))}
               </ul>
             </div>
           ))}
-        </div>
-
-        {/* Newsletter Section */}
-        <div className="mt-12 pt-8 border-t border-gray-700">
-          <div className="max-w-md">
-            <h3 className="text-lg font-semibold mb-4">Subscribe to Research Updates</h3>
-            <p className="text-gray-400 text-sm mb-4">
-              Stay informed about our latest research breakthroughs, publications, and innovations.
-            </p>
-            <form className="flex gap-3">
-              <input
-                type="email"
-                placeholder="Enter your email"
-                className="flex-1 px-4 py-3 bg-dark-800 border border-gray-700 rounded-xl text-white placeholder-gray-500 focus:outline-none focus:border-primary-500 focus:ring-2 focus:ring-primary-500/20 transition-all"
-              />
-              <button
-                type="submit"
-                className="px-6 py-3 bg-primary-600 hover:bg-primary-700 text-white font-semibold rounded-xl transition-all duration-200 transform hover:scale-105"
-              >
-                Subscribe
-              </button>
-            </form>
-          </div>
         </div>
       </div>
 
