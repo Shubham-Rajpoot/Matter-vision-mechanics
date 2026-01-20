@@ -110,7 +110,7 @@ export default function Footer() {
                 <div className="text-white font-black text-2xl lg:text-3xl tracking-tight group-hover:text-primary-400 transition-colors duration-300">
                   MVM
                 </div>
-                <div className="absolute -bottom-1 left-0 right-0 h-0.5 bg-gradient-to-r from-primary-500 to-cyan-500 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></div>
+                <div className="absolute -bottom-1 left-0 right-0 h-0.5 bg-gradient-to-r from-primary-500 to-primary-400 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></div>
               </div>
               <div className="hidden sm:block text-white/80 text-xs font-semibold tracking-widest uppercase">
                 MATTER VISION MECHANICS

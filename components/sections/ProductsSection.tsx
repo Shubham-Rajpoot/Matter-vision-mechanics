@@ -18,9 +18,9 @@ const projects = [
     title: "Clean Air Solutions",
     description: "Portable air purifiers and advanced mask technology for personal and industrial air quality management. Research-backed filtration systems for optimal health protection.",
     features: ["Portable purifiers", "Advanced filtration", "Smart monitoring", "Industrial solutions"],
-    gradient: "from-cyan-500 to-blue-600",
+    gradient: "from-primary-500 to-primary-600",
     category: "Consumer Products",
-    accentColor: "cyan",
+    accentColor: "primary",
   },
   {
     icon: Leaf,
@@ -83,7 +83,7 @@ export default function ProductsSection() {
       {/* Background Pattern */}
       <div className="absolute inset-0 opacity-5">
         <div className="absolute top-0 left-0 w-full h-full" style={{
-          backgroundImage: `radial-gradient(circle at 2px 2px, rgb(59 130 246) 1px, transparent 0)`,
+          backgroundImage: `radial-gradient(circle at 2px 2px, rgb(255 106 0) 1px, transparent 0)`,
           backgroundSize: '40px 40px'
         }}></div>
       </div>

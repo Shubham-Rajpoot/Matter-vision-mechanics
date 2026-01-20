@@ -98,7 +98,7 @@ export default function Navbar() {
                 <div className="text-white font-black text-2xl lg:text-3xl tracking-tight group-hover:text-primary-400 transition-colors duration-300">
                   MVM
                 </div>
-                <div className="absolute -bottom-1 left-0 right-0 h-0.5 bg-gradient-to-r from-primary-500 to-cyan-500 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></div>
+                <div className="absolute -bottom-1 left-0 right-0 h-0.5 bg-gradient-to-r from-primary-500 to-primary-400 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></div>
               </div>
               <div className="hidden sm:block text-white/80 text-xs font-semibold tracking-widest uppercase">
                 MATTER VISION MECHANICS
@@ -123,7 +123,7 @@ export default function Navbar() {
                     }`}
                   >
                     {activeDropdown === item.label && (
-                      <span className="absolute bottom-0 left-4 right-4 h-0.5 bg-gradient-to-r from-primary-400 to-cyan-400"></span>
+                      <span className="absolute bottom-0 left-4 right-4 h-0.5 bg-gradient-to-r from-primary-400 to-primary-500"></span>
                     )}
                     {item.label}
                     {item.dropdown && (

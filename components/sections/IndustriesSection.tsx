@@ -33,7 +33,7 @@ const applications = [
     icon: Users,
     title: "Rural Development",
     description: "Rural engineering solutions, accessible technology for underserved communities, and sustainable infrastructure development.",
-    color: "blue",
+    color: "primary",
     accentIcon: TrendingUp,
   },
   {
@@ -64,7 +64,7 @@ const colorClasses = {
   red: "from-red-500 to-red-600",
   purple: "from-purple-500 to-purple-600",
   orange: "from-orange-500 to-orange-600",
-  blue: "from-blue-500 to-blue-600",
+  blue: "from-primary-500 to-primary-600",
   green: "from-green-500 to-green-600",
   lime: "from-lime-500 to-green-600",
   pink: "from-pink-500 to-rose-600",

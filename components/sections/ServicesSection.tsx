@@ -21,7 +21,7 @@ const researchAreas = [
     title: "Robotics",
     slug: "robotics",
     description: "Fundamental Research in diverse fields like programmable prosthetics, autonomous/semi-autonomous assistants in various industries, industrial automation and more.",
-    gradient: "from-blue-500 to-cyan-500",
+    gradient: "from-primary-500 to-primary-600",
   },
   {
     icon: Network,

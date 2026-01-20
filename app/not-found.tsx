@@ -5,14 +5,14 @@ import { motion } from "framer-motion";
 
 export default function NotFound() {
   return (
-    <main className="min-h-screen flex flex-col items-center justify-center bg-gradient-to-br from-gray-50 to-blue-50 text-center px-4 overflow-hidden">
+    <main className="min-h-screen flex flex-col items-center justify-center bg-gradient-to-br from-gray-50 to-primary-50 text-center px-4 overflow-hidden">
       
       {/* Floating 404 */}
       <motion.h1
         initial={{ opacity: 0, y: -50 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}
-        className="text-8xl sm:text-9xl font-extrabold bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-purple-600 mb-4"
+        className="text-8xl sm:text-9xl font-extrabold bg-clip-text text-transparent bg-gradient-to-r from-primary-600 to-primary-700 mb-4"
       >
         404
       </motion.h1>
@@ -42,7 +42,7 @@ export default function NotFound() {
       <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
         <Link
           href="/"
-          className="bg-blue-600 text-white px-8 py-3 rounded-xl font-medium hover:bg-blue-700 transition shadow-lg"
+          className="bg-primary-600 text-white px-8 py-3 rounded-xl font-medium hover:bg-primary-700 transition shadow-lg"
         >
           Go to Home
         </Link>
@@ -53,7 +53,7 @@ export default function NotFound() {
         initial={{ opacity: 0 }}
         animate={{ opacity: 0.2 }}
         transition={{ delay: 1 }}
-        className="absolute -top-20 -left-20 w-64 h-64 bg-blue-400 rounded-full blur-3xl"
+        className="absolute -top-20 -left-20 w-64 h-64 bg-primary-400 rounded-full blur-3xl"
       />
 
       <motion.div

@@ -14,25 +14,25 @@ export const pagesData = {
         title: "Industrial Automation",
         description: "Manufacturing and production line optimization",
         icon: "bot",
-        color: "text-blue-600",
+        color: "text-primary-600",
       },
       {
         title: "Autonomous Systems",
         description: "Self-navigating and decision-making robots",
         icon: "cpu",
-        color: "text-cyan-600",
+        color: "text-primary-500",
       },
       {
         title: "Service Robotics",
         description: "Healthcare, hospitality, and assistance robots",
         icon: "zap",
-        color: "text-blue-500",
+        color: "text-primary-600",
       },
       {
         title: "Precision Control",
         description: "High-accuracy manipulation and movement",
         icon: "target",
-        color: "text-cyan-500",
+        color: "text-primary-600",
       },
     ],
     researchAreas: [
@@ -71,8 +71,8 @@ export const pagesData = {
       canonical: "https://yourdomain.com/research/robotics",
       // ogImage: "/og/robotics.png"
     },
-    gradient: "from-blue-600 via-cyan-600 to-blue-700",
-    lightGradient: "from-blue-50 to-cyan-50",
+    gradient: "from-primary-600 via-primary-500 to-primary-700",
+    lightGradient: "from-primary-50 to-primary-100",
   },
   // 2. page data
   "artificial-intelligence": {
