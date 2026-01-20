@@ -93,6 +93,7 @@ export default function Navbar() {
               href={"/"}
               className="flex items-center space-x-3 group cursor-pointer"
             >
+              <img src="./icon.png" alt="logo" className="w-16 h-16 max-sm:w-10 max-sm:h-10 max-md:w-12 max-md:h-12 max-lg:w-14 max-lg:h-14" />
               <div className="relative">
                 <div className="text-white font-black text-2xl lg:text-3xl tracking-tight group-hover:text-primary-400 transition-colors duration-300">
                   MVM

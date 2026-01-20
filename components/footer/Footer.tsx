@@ -105,6 +105,7 @@ export default function Footer() {
               href={"/"}
               className="flex items-center space-x-3 group cursor-pointer mb-6"
             >
+              <img src="./icon.png" alt="logo" className="w-14 h-14 max-sm:w-8 max-sm:h-8 max-md:w-10 max-md:h-10 max-lg:w-12 max-lg:h-12" />
               <div className="relative">
                 <div className="text-white font-black text-2xl lg:text-3xl tracking-tight group-hover:text-primary-400 transition-colors duration-300">
                   MVM

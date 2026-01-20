@@ -4,11 +4,6 @@ import "./globals.css";
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
 
-// export const metadata: Metadata = {
-//   title: "MATTER VISION MECHANICS | Advanced Research & Innovation",
-//   description: "Pioneering research company specializing in Robotics, AI, Rural Engineering, Sustainable Ceramics, Bio Remediation, Agrotech, Consumer Products, Healthcare Technology, Assistive Tech, and Industrial Design",
-// };
-
 export const metadata: Metadata = {
   title: {
     default: "MATTER VISION MECHANICS | Advanced Research & Development",
