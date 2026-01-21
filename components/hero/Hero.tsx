@@ -347,7 +347,7 @@ export default function Hero() {
               }}
             />
             <span className="text-xs font-medium text-white/95 tracking-wide">
-              Research & Innovation
+              Research & Development
             </span>
             <motion.div
               animate={{ rotate: [0, 360] }}
@@ -360,7 +360,7 @@ export default function Hero() {
           {/* Headline with word-by-word reveal */}
           <motion.h1
             variants={itemVariants}
-            className="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-white mb-5 leading-[1.1] tracking-tight"
+            className="text-4xl sm:text-5xl flex flex-col items-center justify-center lg:text-6xl font-extrabold text-white mb-5 ml-10 leading-[1.1] tracking-tight"
             style={{
               x: parallaxX,
               y: parallaxY,
