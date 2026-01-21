@@ -87,7 +87,7 @@ const footerLinks = {
 };
 
 const socialLinks = [
-  { icon: Linkedin, href: "#", label: "LinkedIn" },
+  { icon: Linkedin, href: "https://www.linkedin.com/company/matter-vision-mechanics/", label: "LinkedIn" },
   { icon: Twitter, href: "#", label: "Twitter" },
   { icon: Youtube, href: "#", label: "YouTube" },
   { icon: Facebook, href: "#", label: "Facebook" },
@@ -125,15 +125,15 @@ export default function Footer() {
             <div className="space-y-3 mb-8">
               <div className="flex items-center text-gray-300 text-sm">
                 <Mail className="w-5 h-5 mr-3 text-primary-400" />
-                <span className="max-[350px]:text-xs">research@mattervisionmechanics.com</span>
+                <span className="max-[350px]:text-xs">info.mvmpl@gmail.com</span>
               </div>
-              <div className="flex items-center text-gray-300 text-sm">
+              {/* <div className="flex items-center text-gray-300 text-sm">
                 <Phone className="w-5 h-5 mr-3 text-primary-400" />
                 <span>+1 (555) 123-4567</span>
-              </div>
+              </div> */}
               <div className="flex items-start text-gray-300 text-sm">
                 <MapPin className="w-5 h-5 mr-3 mt-0.5 text-primary-400 flex-shrink-0" />
-                <span>Research Campus, Innovation District, City, State 12345</span>
+                <span>R-56, Pallav Puram, Phase 2, Meerut 250110</span>
               </div>
             </div>
 

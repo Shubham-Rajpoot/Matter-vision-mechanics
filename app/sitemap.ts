@@ -1,7 +1,7 @@
 import { pagesData } from "./data.js";
 
 export default function sitemap() {
-  const baseUrl = "https://yourwebsite.com";
+  const baseUrl = "https://matter.vision";
 
   const researchPages = Object.keys(pagesData).map((slug) => ({
     url: `${baseUrl}/${slug}`,

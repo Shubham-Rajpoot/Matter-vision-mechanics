@@ -18,12 +18,16 @@ export const metadata: Metadata = {
     "AI",
     "sustainable ceramics",
     "rural engineering",
+    "matter vision mechanics",
+    "matter",
+    "vision",
+    "mechanics"
   ],
   openGraph: {
     title: "MATTER VISION MECHANICS",
     description:
       "Explore cutting-edge research in engineering, AI, and sustainable technologies.",
-    url: "https://yourdomain.com",
+    url: "https://matter.vision",
     siteName: "MATTER VISION MECHANICS",
     // images: [
     //   {

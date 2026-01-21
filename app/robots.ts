@@ -6,6 +6,6 @@ export default function robots() {
         allow: "/",
       }
     ],
-    sitemap: "https://yourwebsite.com/sitemap.xml"
+    sitemap: "https://matter.vision/sitemap.xml"
   };
 }

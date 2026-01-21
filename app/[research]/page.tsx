@@ -21,13 +21,13 @@ export async function generateMetadata({ params }: { params:{research: string }}
     description: pageData.seo.metaDescription,
     keywords: pageData.seo.keywords,
     alternates: {
-      canonical: pageData.seo.canonical,
+      canonical: `https://matter.vision/${params.research}`,
     },
 
     openGraph: {
       title: pageData.seo.metaTitle,
       description: pageData.seo.metaDescription,
-      url: `https://yourdomain.com/${params.research}`,
+      url: `https://matter.vision/${params.research}`,
       // images: [
       //   {
       //     url: pageData.seo.ogImage, // you can add images later

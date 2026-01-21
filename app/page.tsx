@@ -3,7 +3,7 @@ import Hero from "@/components/hero/Hero";
 import ServicesSection from "@/components/sections/ServicesSection";
 import IndustriesSection from "@/components/sections/IndustriesSection";
 import ProductsSection from "@/components/sections/ProductsSection";
-import InnovationSection from "@/components/sections/InnovationSection";
+// import InnovationSection from "@/components/sections/InnovationSection";
 import Footer from "@/components/footer/Footer";
 import { Metadata } from "next";
 
@@ -20,7 +20,7 @@ export default function Home() {
       <ServicesSection />
       <IndustriesSection />
       <ProductsSection />
-      <InnovationSection />
+      {/* <InnovationSection /> */}
       <Footer />
     </main>
   );

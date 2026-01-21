@@ -68,7 +68,6 @@ export const pagesData = {
         "human robot interaction",
         "AI robotics",
       ],
-      canonical: "https://yourdomain.com/research/robotics",
       // ogImage: "/og/robotics.png"
     },
     gradient: "from-primary-600 via-primary-500 to-primary-700",
@@ -143,7 +142,6 @@ export const pagesData = {
         "NLP",
         "sign language AI",
       ],
-      canonical: "https://yourdomain.com/research/artificial-intelligence",
       // ogImage: "/og/artificial-intelligence.png"
     },
 
@@ -221,7 +219,6 @@ export const pagesData = {
         "smart agriculture",
         "IoT farming",
       ],
-      canonical: "https://yourdomain.com/research/agrotech",
       // ogImage: "/og/agrotech.png"
     },
 
@@ -299,7 +296,6 @@ export const pagesData = {
         "HCI",
         "communication aids",
       ],
-      canonical: "https://yourdomain.com/research/assistive-technology",
       // ogImage: "/og/assistive-technology.png"
     },
 
@@ -377,7 +373,6 @@ export const pagesData = {
         "soil remediation",
         "eco restoration",
       ],
-      canonical: "https://yourdomain.com/research/bio-remediation",
       // ogImage: "/og/bio-remediation.png"
     },
 
@@ -455,7 +450,6 @@ export const pagesData = {
         "educational games",
         "home decor",
       ],
-      canonical: "https://yourdomain.com/research/consumer-products",
       // ogImage: "/og/consumer-products.png"
     },
 
@@ -533,7 +527,6 @@ export const pagesData = {
         "wearable health sensors",
         "AI diagnostics",
       ],
-      canonical: "https://yourdomain.com/research/healthcare-technology",
       // ogImage: "/og/healthcare-technology.png"
     },
 
@@ -611,7 +604,6 @@ export const pagesData = {
         "sustainable manufacturing",
         "design research",
       ],
-      canonical: "https://yourdomain.com/research/industrial-design",
       // ogImage: "/og/industrial-design.png"
     },
 
@@ -689,7 +681,6 @@ export const pagesData = {
         "renewable energy",
         "smart villages",
       ],
-      canonical: "https://yourdomain.com/research/rural-engineering",
       // ogImage: "/og/rural-engineering.png"
     },
 
@@ -767,7 +758,6 @@ export const pagesData = {
         "industrial ceramics",
         "green manufacturing",
       ],
-      canonical: "https://yourdomain.com/research/sustainable-ceramics",
       // ogImage: "/og/sustainable-ceramics.png"
     },
 
