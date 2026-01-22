@@ -2,10 +2,11 @@ import Navbar from "@/components/navbar/Navbar";
 import Hero from "@/components/hero/Hero";
 import ServicesSection from "@/components/sections/ServicesSection";
 import IndustriesSection from "@/components/sections/IndustriesSection";
-import ProductsSection from "@/components/sections/ProductsSection";
+import ProjectsSection from "@/components/sections/ProjectsSection";
 // import InnovationSection from "@/components/sections/InnovationSection";
 import Footer from "@/components/footer/Footer";
 import { Metadata } from "next";
+import ProductsImages from "@/components/sections/ProductsImages";
 
 export const metadata: Metadata = {
   title: "Matter Vision Mechanics",
@@ -17,9 +18,10 @@ export default function Home() {
     <main className="min-h-screen">
       <Navbar />
       <Hero />
+      <ProductsImages />
       <ServicesSection />
       <IndustriesSection />
-      <ProductsSection />
+      <ProjectsSection />
       {/* <InnovationSection /> */}
       <Footer />
     </main>

@@ -74,7 +74,7 @@ const projects = [
   },
 ];
 
-export default function ProductsSection() {
+export default function ProjectsSection() {
   return (
     <section
       id="projects"
@@ -97,7 +97,7 @@ export default function ProductsSection() {
             <div className="h-px w-12 bg-gradient-to-l from-transparent to-primary-500"></div>
           </div>
           <h2 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-gray-900 mb-6 tracking-tight">
-            Research Projects & Products
+            Research Projects
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed font-light">
             Innovative solutions emerging from our research labs, addressing real-world challenges
@@ -162,15 +162,6 @@ export default function ProductsSection() {
                       </li>
                     ))}
                   </ul>
-
-                  {/* Modern CTA */}
-                  {/* <div className="inline-flex items-center text-primary-600 font-semibold group-hover:gap-3 transition-all duration-300">
-                    <span className="relative">
-                      Learn more about this project
-                      <span className="absolute bottom-0 left-0 right-0 h-[2px] bg-gradient-to-r from-primary-600 to-transparent transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left" />
-                    </span>
-                    <ArrowRight className="w-5 h-5 ml-2 transform group-hover:translate-x-2 transition-transform duration-300" />
-                  </div> */}
                 </div>
 
                 {/* Hover Glow Effect */}

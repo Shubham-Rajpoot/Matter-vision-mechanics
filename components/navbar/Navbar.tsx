@@ -46,6 +46,10 @@ const navItems = [
     label: "Applications",
     href: "/#applications",
   },
+  {
+    label: "Products",
+    href: "/#products",
+  },
 ];
 
 export default function Navbar() {
@@ -100,13 +104,13 @@ export default function Navbar() {
                 </div>
                 <div className="absolute -bottom-1 left-0 right-0 h-0.5 bg-gradient-to-r from-primary-500 to-primary-400 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></div>
               </div>
-              <div className="hidden sm:block text-white/80 text-xs font-semibold tracking-widest uppercase">
+              <div className="hidden md:block text-white/80 text-xs font-semibold tracking-widest uppercase">
                 MATTER VISION MECHANICS
               </div>
             </Link>
 
             {/* Desktop Navigation */}
-            <div className="hidden sm:flex items-center space-x-1">
+            <div className="hidden md:flex items-center space-x-1">
               {navItems.map((item) => (
                 <div
                   key={item.label}
@@ -118,7 +122,7 @@ export default function Navbar() {
                 >
                   <a
                     href={item.href}
-                    className={`relative flex items-center px-4 py-2 text-sm font-semibold text-white/90 hover:text-white transition-all duration-300 ${
+                    className={`relative flex items-center px-4 py-2 text-sm font-semibold text-white/80 hover:text-primary-400 transition-all duration-300 ${
                       activeDropdown === item.label ? "text-white" : ""
                     }`}
                   >
@@ -148,7 +152,7 @@ export default function Navbar() {
               
             </div>
 
-            <div className="flex items-center space-x-4 lg:space-x-6 sm:hidden">
+            <div className="flex items-center space-x-4 lg:space-x-6 md:hidden">
               <button
                 onClick={toggleMobileMenu}
                 className="lg:hidden text-white p-2"
