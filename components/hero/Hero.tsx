@@ -6,17 +6,19 @@ import { ArrowRight, Sparkles } from "lucide-react";
 
 // Floating particles component
 const FloatingParticle = ({ delay = 0 }: { delay?: number }) => {
-  const x = useMotionValue(Math.random() * (typeof window !== 'undefined' ? window.innerWidth : 1920));
-  const y = useMotionValue(Math.random() * (typeof window !== 'undefined' ? window.innerHeight : 1080));
+ const x = useMotionValue(0);
+  const y = useMotionValue(0);
 
   useEffect(() => {
-    const interval = setInterval(() => {
-      if (typeof window !== 'undefined') {
-        x.set(Math.random() * window.innerWidth);
-        y.set(Math.random() * window.innerHeight);
-      }
-    }, 10000 + delay * 1000);
-
+    const setRandomPosition = () => {
+      x.set(Math.random() * window.innerWidth);
+      y.set(Math.random() * window.innerHeight);
+    };
+    setRandomPosition();
+    const interval = setInterval(
+      setRandomPosition,
+      10000 + delay * 1000
+    );
     return () => clearInterval(interval);
   }, [x, y, delay]);
 
@@ -241,7 +243,7 @@ export default function Hero() {
   return (
     <section
       ref={heroRef}
-      className="relative min-h-screen w-full overflow-hidden pt-24 pb-24"
+      className="relative min-h-[500px] w-full overflow-hidden py-32"
     >
       {/* Animated Background Layers */}
       <div className="absolute inset-0 z-0">
@@ -427,7 +429,7 @@ export default function Hero() {
           </motion.div>
 
           {/* Stats Grid with staggered animation */}
-          <motion.div
+          {/* <motion.div
             variants={itemVariants}
             className="grid grid-cols-3 gap-8 max-w-2xl mx-auto pt-8 border-t border-white/10"
           >
@@ -460,7 +462,7 @@ export default function Hero() {
                 </div>
               </motion.div>
             ))}
-          </motion.div>
+          </motion.div> */}
         </motion.div>
       </div>
 

@@ -1,13 +1,13 @@
 
 import {
   Linkedin,
-  Twitter,
   Youtube,
   Facebook,
   Mail,
   Phone,
   MapPin,
   ArrowRight,
+  Instagram,
 } from "lucide-react";
 import Link from "next/link";
 
@@ -88,7 +88,7 @@ const footerLinks = {
 
 const socialLinks = [
   { icon: Linkedin, href: "https://www.linkedin.com/company/matter-vision-mechanics/", label: "LinkedIn" },
-  { icon: Twitter, href: "#", label: "Twitter" },
+  { icon: Instagram, href: "https://www.instagram.com/info.mvmpl?utm_source=qr&igsh=MndrbWU1ZXNkN3d2", label: "Instagram" },
   { icon: Youtube, href: "#", label: "YouTube" },
   { icon: Facebook, href: "#", label: "Facebook" },
 ];
