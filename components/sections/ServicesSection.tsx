@@ -127,7 +127,7 @@ export default function ServicesSection() {
               <Link
                 key={index}
                 href={`/${area.slug}`}
-                className="group relative bg-white rounded-2xl p-8 shadow-[0_1px_3px_0_rgba(0,0,0,0.1),0_1px_2px_-1px_rgba(0,0,0,0.1)] hover:shadow-[0_10px_30px_-5px_rgba(0,0,0,0.1),0_20px_40px_-10px_rgba(0,0,0,0.06)] transition-all duration-500 transform hover:-translate-y-1 border border-gray-200/50 hover:border-gray-300 block cursor-pointer overflow-hidden"
+                className="group relative bg-white rounded-2xl max-[300px]:p-6 p-8 shadow-[0_1px_3px_0_rgba(0,0,0,0.1),0_1px_2px_-1px_rgba(0,0,0,0.1)] hover:shadow-[0_10px_30px_-5px_rgba(0,0,0,0.1),0_20px_40px_-10px_rgba(0,0,0,0.06)] transition-all duration-500 transform hover:-translate-y-1 border border-gray-200/50 hover:border-gray-300 block cursor-pointer overflow-hidden"
               >
                 {/* Subtle gradient background on hover */}
                 <div

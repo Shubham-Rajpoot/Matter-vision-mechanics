@@ -110,7 +110,7 @@ export default function IndustriesSection() {
             return (
               <div
                 key={index}
-                className="group relative bg-white rounded-3xl p-8 shadow-modern hover:shadow-modern-lg transition-all duration-500 transform hover:-translate-y-2 border border-gray-100 hover:border-gray-200 overflow-hidden"
+                className="group relative bg-white rounded-3xl max-[300px]:p-6 p-8 shadow-modern hover:shadow-modern-lg transition-all duration-500 transform hover:-translate-y-2 border border-gray-100 hover:border-gray-200 overflow-hidden"
               >
                 {/* Animated Background Gradient */}
                 <div
