@@ -15,7 +15,7 @@ interface NavDropdownProps {
 
 export default function NavDropdown({ items, activeItem, onItemHover }: NavDropdownProps) {
   return (
-    <div className="absolute top-full left-0 mt-0 w-72 bg-white shadow-soft-lg py-2 animate-slide-down">
+    <div className="absolute top-full rounded-xl left-0 mt-0 w-72 bg-dark-900/80 shadow-soft-lg py-2 animate-slide-down">
       {items.map((item, index) => {
         const isActive = activeItem === item.label;
         const isRoute = item.href.startsWith("/");
@@ -32,8 +32,8 @@ export default function NavDropdown({ items, activeItem, onItemHover }: NavDropd
             onMouseLeave={() => onItemHover && onItemHover(null)}
             className={`relative flex items-center justify-between px-8 py-3 text-sm transition-all duration-200 group ${
               isActive
-                ? "bg-gray-100 text-gray-900"
-                : "text-gray-700 hover:bg-gray-50"
+                ? "bg-dark-900/80 text-white"
+                : "text-white hover:bg-dark-900/80"
             }`}
           >
             <span className="relative inline-block pb-1">
